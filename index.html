@@ -12,19 +12,26 @@
       <h1>Tic-Tac-Toe</h1>
     </div>
     <div class="container">
-      <form class="start">
-        <div class="form-group">
+      <form id="start">
+        <select class="form-control form-group" id="option">
+           <option value="one">One Player</option>
+           <option value="two">Two Player</option>
+        </select>
+        <button type="submit" name="button">Play</button>
+      </form>
+      <form id="names">
+        <div class="form-group playersNames">
           <label for="player1">Player 1: </label>
           <input type="text" id="pName1">
         </div>
-        <div class="form-group">
+        <div class="form-group playersNames">
           <label for="player2">Player 2: </label>
           <input type="text" id="pName2">
         </div>
-        <button type="button" name="button" id="play">New Game</button>
+        <button type="submit">New Game</button>
       </form>
-      <div class="grid">
 
+      <div class="grid">
       </div>
       <div class="winner">
 

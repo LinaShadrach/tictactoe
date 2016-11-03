@@ -6,3 +6,11 @@
 .grid {
   margin-top: 100px;
 }
+
+.winner {
+  font-size: 90px;
+}
+
+#names {
+  display: none;
+}

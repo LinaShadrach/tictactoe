@@ -28,6 +28,42 @@ _This page will allow two users to play tic tac toe against each other and outpu
 * _It will check when there is three in a row and declare a winner._
     * _Example Input: three Xs_
     * _Example Output: player2 wins_  
+* _It will ask the user whether they would like to play one or two players_
+  * _Example Input: one player_
+  * _Example Output: player vs computer_
+#### One player Specs
+
+* _If player1 has 2 in a row, computer blocks it._
+  * _p00, p11_
+  * _c22_
+* _If computer has 2 in a row, it chooses spot to make 3 in a row._
+  * _c00, c11_
+  * _c22_
+* _If player1 goes first and chooses center, computer chooses a corner._
+  * _p11_
+  * _c00, c02, c20, or c22_
+* _If player1 goes first and does not choose center, computer chooses a center._
+  * _p00_
+  * _c11_
+* _If player1 chooses center first and second choice presents nothing to block, computer takes another corner._
+  * _p11_
+  * _c02, c20, or c22_
+* _It will randomize which player goes first_
+  * _one player_
+  * _player 1 goes first_
+* _If computer goes first, it will choose the center._
+  * _one player: computer_
+  * _c11_
+* _If computer goes first and player chooses a corner, then computer takes opposite corner._
+  * _p00_
+  * _c20_
+* _If computer goes first and player chooses a corner, and there's nothing to block, then computer chooses corner in row where there are no player marks._
+  * _p21_
+  * _c02_
+* _If computer goes first and player does not choose a corner, then computer chooses adjacent corner_
+  * _p12_
+  * _c22_
+
 
 ## Setup/Installation Requirements
 
